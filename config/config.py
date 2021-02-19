@@ -9,9 +9,9 @@ class BaseSettings:
 
 
 class DevSettings(BaseSettings):
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://local:hyf3513SQL@127.0.0.1/local_test"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://user:pass@127.0.0.1/databasename"
     DEBUG = True
-    SESSION_REDIS = redis.Redis(host='127.0.0.1', port=6379, password="hyf3513REDIS",db=1) # 操作的redis配置
+    SESSION_REDIS = redis.Redis(host='127.0.0.1', port=6379, password="pass",db=1) # 操作的redis配置
 
 
 class ProSettings(BaseSettings):
